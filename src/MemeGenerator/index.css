@@ -17,6 +17,27 @@
     justify-content: space-between;
     padding: 10px;
 }
+.container{
+    position: relative;
+    display: inline-block;
+}
+.text-overlay {
+    font-weight: 800;
+    position: absolute;
+    left: 35%;
+    color: #fff;
+    font-size: 40px;
+    max-width: 400px;
+    z-index: 1;
+}
+.top_text{
+    top: 40px;
+    margin-top: 0;
+}
+.bottom_text{
+    bottom: 40px;
+    margin-bottom: 0;
+}
 
 .header h1 {
     margin: 10px;
@@ -64,8 +85,8 @@ main{
 }
 .meme--image{
     margin: 30px;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 
