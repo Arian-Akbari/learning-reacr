@@ -1,17 +1,21 @@
-import {useEffect} from "react";
-import Header from "./MemeGenerator/Header";
-import Meme from "./MemeGenerator/Meme";
+import WindowTracker from "./WindowTracker";
+import {useState} from "react";
 
 export default function App() {
 
-    useEffect(() =>{
-        console.log("chert")
-    } , [])
+    const [show , setShow] = useState(true)
+
+    function toggle(){
+        setShow(prevState => !prevState)
+    }
+
 
     return (
         <div>
-            <Header/>
-            <Meme/>
+            <button onClick={toggle}>
+                toggle window tracker
+            </button>
+            {show && <WindowTracker />}
         </div>
     );
 }
